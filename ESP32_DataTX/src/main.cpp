@@ -50,6 +50,11 @@ void loop()
     {
       updatePacket1(&packet1);
       sendPacket1(&packet1);
+
+      // Serial.print("PacketType = ");
+      // Serial.write(packet1.packetType);
+      // Serial.write('\n');
+      // Serial.println(packet1.packetType, DEC);
       Serial.println("Packet1 sent");
     }
 
@@ -77,6 +82,7 @@ void loop()
         }
         Serial.print("\n");
       }*/
+      //done
       
       Serial.println("Packet2 sent");
     }

@@ -30,6 +30,7 @@ void sendPacket1(Packet1_t *obj)
     for (uint8_t i = 0; i < sizeof(*obj); i++)
     {
         Serial2.write(*(ptrPacket1));
+        // Serial2.print(*(ptrPacket1), DEC);
         checksumPacket1 += *(ptrPacket1);
         ptrPacket1++;
     }
